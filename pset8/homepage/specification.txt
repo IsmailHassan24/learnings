@@ -1,0 +1,25 @@
+Tags:
+1. <h1>
+2. <ul>
+3. <li>
+4. <a>
+5. <div>
+6. <img>
+7. <h2>
+8. <p>
+9. <blockquote>
+10. <strong>
+11. <table>
+12. <address>
+
+CSS Properties:
+1. background-colour
+2. text-align
+3. font-family
+4. color
+5. list-style-type
+6. margin
+7. padding
+8. width
+
+I used javascript to create geolocation functions that shows the users location on clicking. I used Bootstrap to style the button. 

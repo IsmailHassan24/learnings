@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                //Select all buttons with wrong answers
+                let WrongButton = document.querySelectorAll('.Wrong');
+                WrongButton.forEach(button => {
+                    button.addEventListener('click', function() {
+                        button.style.backgroundColor ='red';
+                        document.querySelector('#answer1').innerHTML = "Incorrect";
+                    });
+                });
+            //Correct Answer Button
+            document.querySelector('#Right').addEventListener('click', function() {
+                this.style.backgroundColor ='green';
+                document.querySelector('#answer1').innerHTML = "Correct!";
+            });
+            document.querySelector('#check').addEventListener('click', function(){
+                let input = document.querySelector('input');
+                if (input.value === 'Sony'){
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#answer2').innerHTML = "Correct!";
+                }
+                else{
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#answer2').innerHTML = "Incorrect";
+                }
+            })
+        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Who sang the title song for the latest Bond film, No Time to Die?</h3>
+                 <button class="Wrong">Adele</button>
+                 <button class="Wrong">Sam Smith</button>
+                 <button id="Right">Billie Eilish</button>
+
+                 <p id="answer1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>What company makes the Xperia model of smartphone?</h3>
+                 <input type="text"></input>
+                 <button id ="check">Check Answer</button>
+                 <p id="answer2"></p>
+            </div>
+        </div>
+    </body>
+</html>
