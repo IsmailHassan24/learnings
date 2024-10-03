@@ -1,0 +1,1 @@
+If the database contained the top 100 songs, you could characterise their aura by evaluating danceability, energy, loudiness, speechiness, valence and tempo. Using this you would understand what aura of music a listener values based on their averages across these variables. Genre is probably an easier way to represent a better calculation of aura. 

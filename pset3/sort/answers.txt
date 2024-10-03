@@ -1,0 +1,15 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sort was quicker for the already sorted numbers - it has a theta of n compared to selection
+sort having a theta of n2.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge Sort is the quickest sorting algorithm of the three with a O(n log n) notation. Was
+the quickest on the randomnly shuffled set of numbers.
+
+sort3 uses: Selection Sort
+
+How do you know?: Slower for sorted numbers
+
+
